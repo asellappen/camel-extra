@@ -21,7 +21,7 @@ dist: trusty
 #     organization: "camel-extra" 
 script: 
   - mvn clean install -B -e -X -PwithRatCheck,integration
-#   - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
+#  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
 jdk:
   - openjdk8
   - openjdk11
