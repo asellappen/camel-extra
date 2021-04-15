@@ -11,12 +11,11 @@
 # ----------------------------------------------------------------------------
 language: java
 arch:
- #  - amd64
+    - amd64
     - ppc64le
 
-dist: focal
-before_install:
-   - export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-ppc64el/
+dist: trusty
+
 # addons:
 #   sonarcloud:
 #     organization: "camel-extra" 
@@ -24,6 +23,5 @@ script:
   - mvn clean install -B -e -X -PwithRatCheck,integration
 #   - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
 jdk:
-  - openjdk14
-  - openjdk15
+  - openjdk8
   - openjdk11
