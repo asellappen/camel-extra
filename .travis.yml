@@ -15,7 +15,8 @@ arch:
     - ppc64le
 
 dist: focal
-
+before_install:
+   - export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-ppc64el/
 # addons:
 #   sonarcloud:
 #     organization: "camel-extra" 
